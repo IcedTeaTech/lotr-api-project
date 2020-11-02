@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import "./App.css";
@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const api_url = "https://the-one-api.dev/v2";
 
-  const [quotes, setQuotes] = useState([]);
+  // const [quotes, setQuotes] = useState([]);
   const [books, setBooks] = useState([]);
 
   // useEffect(() => {
