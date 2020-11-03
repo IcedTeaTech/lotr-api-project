@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import "./App.css";
@@ -26,7 +26,7 @@ function App() {
   const getMovies = async () => {
     const response = await fetch(`${api_url}/movie`, {
       headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
+        Authorization: `Bearer ${API_KEY}`,
       },
     });
 
